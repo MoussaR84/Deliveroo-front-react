@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+header {
+  margin-top: 30px;
+}
+/* GLOBAL */
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #828585;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "stratos";
+  color: #2e3333;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 12px;
+  margin-top: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loading {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+hr {
+  margin-top: 20px;
+  border-top: 1px solid #e8eaea;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* MAIN */
+
+main {
+  padding-top: 10px;
+  background-color: #f3f5f5;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+main > .container {
+  width: 90%;
+  max-width: 1150px;
+  display: flex;
+  align-items: flex-start;
+}
+
+main > .container > section {
+  flex: 1;
+}
+main > .container > section:first-child {
+  flex: 2;
+}
+
+@media (max-width: 729px) {
+  main .container {
+    width: 100%;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  main > .container > section {
+    flex: 100%;
+  }
+
+  main > .container > section:last-child {
+    flex: 100%;
   }
 }

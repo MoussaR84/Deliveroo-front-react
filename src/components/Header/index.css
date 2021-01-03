@@ -1,0 +1,25 @@
+/* HEADER */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  max-width: 1150px;
+  height: 24px;
+}
+
+header img {
+  width: 112px;
+}
+
+header nav {
+  display: flex;
+}
+
+@media (max-width: 728px) {
+  header nav > div:first-child {
+    display: none;
+  }
+}
